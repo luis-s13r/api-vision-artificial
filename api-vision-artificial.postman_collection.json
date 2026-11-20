@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "9cb93f1e-396f-45da-a0e7-d9abf2659998",
+		"name": "api-vision-artificial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22979805"
+	},
+	"item": [
+		{
+			"name": "detectar-etiquetas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bucket_name\": \"gcr-data-01\",\r\n  \"image_name\": \"images/skateboard_resized.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dilg7fvwu3.execute-api.us-east-1.amazonaws.com/dev/images/etiquetas",
+					"protocol": "https",
+					"host": [
+						"dilg7fvwu3",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"images",
+						"etiquetas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
